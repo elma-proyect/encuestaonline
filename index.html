@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta del Curso Antigravity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Curso Antigravity</h1>
+            <p>Queremos tu opinion</p>
+        </header>
+        
+        <form id="surveyForm">
+            <div class="form-group">
+                <label for="id_estudiante">ID de Estudiante</label>
+                <input type="text" id="id_estudiante" name="id_estudiante" required placeholder="Ej: ALU-12345">
+            </div>
+
+            <div class="form-group">
+                <label>Nivel de Satisfacción</label>
+                <div class="rating-group">
+                    <input type="radio" id="sat-1" name="nivel_satisfaccion" value="1" required><label for="sat-1">1</label>
+                    <input type="radio" id="sat-2" name="nivel_satisfaccion" value="2"><label for="sat-2">2</label>
+                    <input type="radio" id="sat-3" name="nivel_satisfaccion" value="3"><label for="sat-3">3</label>
+                    <input type="radio" id="sat-4" name="nivel_satisfaccion" value="4"><label for="sat-4">4</label>
+                    <input type="radio" id="sat-5" name="nivel_satisfaccion" value="5"><label for="sat-5">5</label>
+                </div>
+                <div class="rating-labels">
+                    <span>Muy insatisfecho</span>
+                    <span>Muy satisfecho</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Claridad del Contenido</label>
+                <div class="rating-group">
+                    <input type="radio" id="clar-1" name="claridad_contenido" value="1" required><label for="clar-1">1</label>
+                    <input type="radio" id="clar-2" name="claridad_contenido" value="2"><label for="clar-2">2</label>
+                    <input type="radio" id="clar-3" name="claridad_contenido" value="3"><label for="clar-3">3</label>
+                    <input type="radio" id="clar-4" name="claridad_contenido" value="4"><label for="clar-4">4</label>
+                    <input type="radio" id="clar-5" name="claridad_contenido" value="5"><label for="clar-5">5</label>
+                </div>
+                <div class="rating-labels">
+                    <span>Muy poco claro</span>
+                    <span>Muy claro</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Aplicabilidad Práctica</label>
+                <div class="rating-group">
+                    <input type="radio" id="apli-1" name="aplicabilidad_practica" value="1" required><label for="apli-1">1</label>
+                    <input type="radio" id="apli-2" name="aplicabilidad_practica" value="2"><label for="apli-2">2</label>
+                    <input type="radio" id="apli-3" name="aplicabilidad_practica" value="3"><label for="apli-3">3</label>
+                    <input type="radio" id="apli-4" name="aplicabilidad_practica" value="4"><label for="apli-4">4</label>
+                    <input type="radio" id="apli-5" name="aplicabilidad_practica" value="5"><label for="apli-5">5</label>
+                </div>
+                <div class="rating-labels">
+                    <span>Nada aplicable</span>
+                    <span>Muy aplicable</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios_adicionales">Comentarios Adicionales</label>
+                <textarea id="comentarios_adicionales" name="comentarios_adicionales" rows="4" placeholder="Cuéntanos más sobre tu experiencia..."></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">
+                <span>Enviar Encuesta</span>
+                <div class="spinner" id="spinner"></div>
+            </button>
+        </form>
+
+        <div id="successMessage" class="hidden">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+            <h2>¡Gracias por tu opinión!</h2>
+            <p>Tus respuestas han sido registradas exitosamente.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
