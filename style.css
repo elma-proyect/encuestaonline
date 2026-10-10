@@ -1,13 +1,13 @@
 :root {
-    --bg-color: #0f172a;
-    --card-bg: rgba(30, 41, 59, 0.7);
-    --primary: #6366f1;
-    --primary-hover: #4f46e5;
+    --bg-color: #170f2a;
+    --card-bg: rgba(41, 30, 59, 0.7);
+    --primary: #d946ef;
+    --primary-hover: #c026d3;
     --text-main: #f8fafc;
-    --text-muted: #94a3b8;
+    --text-muted: #cbd5e1;
     --border: rgba(255, 255, 255, 0.1);
-    --input-bg: rgba(15, 23, 42, 0.6);
-    --focus-ring: rgba(99, 102, 241, 0.5);
+    --input-bg: rgba(23, 15, 42, 0.6);
+    --focus-ring: rgba(217, 70, 239, 0.5);
 }
 
 * {
@@ -20,8 +20,8 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
     background-image: 
-        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.15) 0px, transparent 50%);
+        radial-gradient(at 0% 0%, rgba(217, 70, 239, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.15) 0px, transparent 50%);
     background-attachment: fixed;
     color: var(--text-main);
     min-height: 100vh;
@@ -52,7 +52,7 @@ header {
 header h1 {
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #818cf8, #c084fc);
+    background: linear-gradient(135deg, #f472b6, #d946ef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
@@ -135,7 +135,7 @@ textarea {
     border-color: var(--primary);
     color: white;
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 15px rgba(217, 70, 239, 0.4);
 }
 
 .rating-labels {
@@ -167,7 +167,7 @@ button {
 button:hover {
     background: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 10px 25px -5px rgba(217, 70, 239, 0.5);
 }
 
 button:active {
