@@ -1,11 +1,12 @@
 {
   "name": "encuestaonline",
   "version": "1.0.0",
-  "description": "Servicio web de encuesta",
+  "description": "Servicio web de encuesta con Express",
+  "main": "server.js",
   "scripts": {
-    "start": "serve ."
+    "start": "node server.js"
   },
   "dependencies": {
-    "serve": "^14.2.1"
+    "express": "^4.21.0"
   }
 }
