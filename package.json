@@ -1,0 +1,11 @@
+{
+  "name": "encuestaonline",
+  "version": "1.0.0",
+  "description": "Servicio web de encuesta",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
